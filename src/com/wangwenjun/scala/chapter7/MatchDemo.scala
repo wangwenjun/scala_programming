@@ -1,12 +1,11 @@
 package com.wangwenjun.scala.chapter7
 
-/** *************************************
-  *
-  * @author:Alex Wang
-  * @Date:2017 /6/11
-  *            QQ:532500648
-  *            QQ交流群:286081824
-  * **************************************/
-object MatchDemo {
+object MatchDemo extends App {
 
+  var a: String = _
+  a match {
+    case "Alex" => println("11111111111")
+    case "Tinner" => println("2222222222")
+    case _ => println("default")
+  }
 }
