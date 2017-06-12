@@ -4,11 +4,13 @@ class Rational8(var n: Int, var d: Int) {
   require(d != 0, "The d not allowed zero.")
 
   private val g = gcd(n.abs, d.abs)
-
   n = n / g
   d = d / g
 
-  def this() = this(1, 1)
+  def this() = {
+    this(1, 1)
+    println("====================")
+  }
 
   def this(n: Int) = this(n, 1)
 
